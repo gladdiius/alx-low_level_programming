@@ -9,7 +9,7 @@ int main(void)
 
 	int i = 0;
 
-	while (str[i] != '\n' && str[] != '\0')
+	while (str[i] != '\n' && str[i] != '\0')
 
 	{
 		putchar(str[i]);
