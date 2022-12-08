@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - it prints an array of characters
+ *main - it prints an array of characters.
  *Return: return 0
  */
 int main(void)
