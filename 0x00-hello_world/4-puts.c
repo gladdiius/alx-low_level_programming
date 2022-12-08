@@ -1,10 +1,12 @@
 #include <stdio.h>
 /**
- * main - This is a function that print an array of char   
+ *main - it prints an array of characters.
+ *Return: return 0
  */
-int main(void) 
+int main(void)
 {
-char str[] = "\"Programming is like building a multilingual puzzle";
-puts(str);
-return (0);
+	char str[50] = "\"Programming is like building a multilingual puzzle";
+
+	puts(str);
+	return (0);
 }
