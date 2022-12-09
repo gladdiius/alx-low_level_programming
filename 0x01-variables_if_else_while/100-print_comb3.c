@@ -22,7 +22,7 @@ int main(void)
 		{
 		putchar((array[i] % 10) + '0');
 		putchar((array[j] % 10) + '0');
-		if (array[i] != 89)
+		if (array[i] != 8)
 		{
 			putchar(',');
 			putchar(' ');
