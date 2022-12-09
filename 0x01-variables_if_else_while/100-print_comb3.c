@@ -20,8 +20,8 @@ int main(void)
 	{
 		if (array[j] != array[i] && array[j] - array[i] > 0)
 		{
-		putchar((arraynum2[i] % 10) + '0');
-		putchar((arraynum[j] % 10) + '0');
+		putchar((array[i] % 10) + '0');
+		putchar((array[j] % 10) + '0');
 		if (i != 9)
 		{
 			putchar(',');
