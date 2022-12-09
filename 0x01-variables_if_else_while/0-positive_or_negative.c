@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 #include <time.h>
 /**
  * main - check if a random genarated number is positive , negative or zero
