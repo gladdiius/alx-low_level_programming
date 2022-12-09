@@ -15,7 +15,7 @@ int main(void)
 	int i;
 	char lowercase;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		putchar((number[i] % 10) + '0');
 	}
