@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <ctype.h>
 /**
- * main - prints lower case alpabates
+ * main - prints all number of base 16 in lower-case
  *
  * Return: value 0
  *
