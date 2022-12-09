@@ -3,9 +3,9 @@
 
 /**
  *
- *main - prints lower case alpabates
+ * main - prints lower case alpabates
  *
- *Return: value 0
+ * Return: value 0
  *
  **/
 
@@ -15,8 +15,7 @@ int main(void)
 
 	for (alpa = 'a'; alpa <= 'z'; alpa++)
 	{
-		putchar(alpa);
-		
+	putchar(alpa);		
 	}
 	putchar('\n');
 	return (0);
