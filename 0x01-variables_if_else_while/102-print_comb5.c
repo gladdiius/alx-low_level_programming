@@ -30,9 +30,11 @@ int main(void)
 		putchar(' ');
 		putchar((array[i] % 10) + '0');
 		putchar((array[j] % 10) + '0');
+		if(!(e[k]==9 && e[l]==8))
+		{
 		putchar(',');
 		putchar(' ');
-		
+		}
 		}
 		
 	}
