@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
- * main - prints all number form 0 to 9 separated by comma
+ * main - prints specific numbers form 00 01 to 98 99
  *
  * Return: value 0
  *
@@ -23,7 +23,7 @@ int main(void)
 	{
 		if (!(array[i] == 0 && array[j] == 0) && 
 				(array[i] >= array[k]) && 
-				(array[j] >  array[l]))
+				(array[j] <  array[l]))
 		{
 		putchar((array[k] % 10) + '0');
 		putchar((array[l] % 10) + '0');
