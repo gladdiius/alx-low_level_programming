@@ -20,7 +20,7 @@ int main(void)
 	{
 	for (j = 0; j <= 9; j++)
 	{
-		if (!(array[i] == 0 && array[j] == 0) && (array[l] != 9)
+		if (!(array[i] == 0 && array[j] == 0) && (array[l] != 9))
 		{
 		putchar(' ');
 		putchar((array[k] % 10) + '0');
