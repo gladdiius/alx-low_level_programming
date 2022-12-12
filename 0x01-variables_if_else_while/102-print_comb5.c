@@ -28,7 +28,7 @@ int main(void)
 		putchar(' ');
 		putchar((array[i] % 10) + '0');
 		putchar((array[j] % 10) + '0');
-		putchar(',')
+		putchar(',');
 		}
 	}
 	}
