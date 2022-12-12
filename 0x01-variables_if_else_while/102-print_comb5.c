@@ -12,6 +12,7 @@ int main(void)
 {
 	int j, i, k, l;
 	int array[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+
 	for (k = 0; k <= 9; k++)
 	{
 	for (l = 0; l <= 9; l++)
