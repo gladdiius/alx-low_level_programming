@@ -22,7 +22,6 @@ int main(void)
 	{
 		if (!(array[i] == 0 && array[j] == 0) && (array[l] != 9))
 		{
-		putchar(' ');
 		putchar((array[k] % 10) + '0');
 		putchar((array[l] % 10) + '0');
 		putchar(' ');
