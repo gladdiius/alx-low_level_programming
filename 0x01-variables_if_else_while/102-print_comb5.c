@@ -21,7 +21,7 @@ int main(void)
 	{
 	for (j = 0; j <= 9; j++)
 	{
-		if (!(array[i] == 0 && array[j] == 0) && (array[l] != 9) && array[l] > array[j])
+		if (!(array[i] == 0 && array[j] == 0) && (array[i] >= array[k]) && (array[j] >  array[l]))
 		{
 		putchar((array[k] % 10) + '0');
 		putchar((array[l] % 10) + '0');
