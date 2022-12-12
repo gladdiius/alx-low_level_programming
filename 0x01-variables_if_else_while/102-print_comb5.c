@@ -21,15 +21,15 @@ int main(void)
 	{
 	for (j = 0; j <= 9; j++)
 	{
-		if (!(array[i] == 0 && array[j] == 0) && 
-				(array[i] >= array[k]) && 
-				(array[j] <  array[l]))
+		if (!(array[i] == 0 && array[j] == 0))
 		{
+
 		putchar((array[k] % 10) + '0');
 		putchar((array[l] % 10) + '0');
 		putchar(' ');
 		putchar((array[i] % 10) + '0');
 		putchar((array[j] % 10) + '0');
+
 		if(!(array[k]==9 && array[l]==8))
 		{
 		putchar(',');
