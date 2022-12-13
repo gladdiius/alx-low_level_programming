@@ -5,7 +5,7 @@
  *@c: number passed from main
  *Return: value 0 if not lowercase and 1 if uppercase
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	int x;
 
