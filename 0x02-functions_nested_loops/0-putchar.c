@@ -1,14 +1,29 @@
-#include <stdio.h>
-
-/**
- *main-print _putchar to the screen
- *
- *Return: value 0
- *
- */
-
 int main(void)
 {
-	printf("_putchar");
+	e[] = "_putchar\n";
+	int i = 0;
+	while(e[i] != '\n' && e[i] != '\0')
+	{
+		_putchar(e[i]);
+	}
 	return 0;
+}
+
+/**
+ *
+ ** _putchar - writes the character c to stdout
+ *
+ ** @c: The character to print
+ *
+ **
+ *
+ ** Return: On success 1.
+ *
+ ** On error, -1 is returned, and errno is set appropriately.
+ *
+ **/
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
