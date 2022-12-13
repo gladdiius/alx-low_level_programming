@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  *_islower - check if a number is upper caser or lower
  *
@@ -5,12 +7,13 @@
  */
 int _islower(int c)
 {
-	x=islower(c);
-	if(x == 0)
+	int x;
+	x = islower(c);
+	if (x == 0)
 	{
 		return 0;
 	}
-	if(x == 2)
+	if (x == 2)
 	{
 		return 1;
 	}
