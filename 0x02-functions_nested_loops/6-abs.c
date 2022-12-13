@@ -3,7 +3,7 @@
 /**
  *_abs - check if a number is upper caser or lower
  *@x: number passed from main
- *Return: value 0 if not lowercase and 1 if uppercase
+ *Return: absolut value of a number
  */
 int _abs(int x)
 {
