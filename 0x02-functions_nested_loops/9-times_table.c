@@ -27,12 +27,13 @@ void times_table(void)
 
 	if(i != 9 && table < 10)
 	{
-	_putchar(',');
 	_putchar(' ');
 	_putchar(' ');
+	_putchar(','); 
 	}
 	else if (i != 9 && table >= 10)
 	{
+		_putchar(',');
 		_putchar(' ');
 	}
 	else
