@@ -15,7 +15,8 @@ void times_table(void)
 	for (i = 0; i <= 9; i++)
 	{
 	table = e[j] * e[i];
-	_putchar((table % 10) + '0');
+	putchar((table/10)+'0');
+	putchar((table%10)+'0');
 	if(j != 9)
 	{
 	_putchar(',');
@@ -28,3 +29,4 @@ void times_table(void)
 	}
 }
 }
+
