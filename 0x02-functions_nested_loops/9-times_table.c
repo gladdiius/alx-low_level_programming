@@ -33,7 +33,7 @@ void times_table(void)
 	}
 	else if (i != 9 && table >= 10)
 	{
-		putchar(' ');
+		_putchar(' ');
 	}
 	else
 	{
