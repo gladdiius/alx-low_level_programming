@@ -2,7 +2,7 @@
 
 /**
  *_islower - check if a number is upper caser or lower
- *
+ *@c: number passed from main
  *Return: value 0 if not lowercase and 1 if uppercase
  */
 int _islower(int c)
