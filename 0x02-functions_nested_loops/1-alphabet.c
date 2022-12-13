@@ -1,10 +1,9 @@
 #include "main.h"
 
-
 /**
- * main - print all alphabets
+ *print_alphabet - print all alphabets
  *
- * Return: void
+ *Return: void
  */
 
 void print_alphabet(void)
