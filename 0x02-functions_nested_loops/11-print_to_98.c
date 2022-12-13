@@ -7,13 +7,14 @@
  */
 void print_to_98(int n)
 {
-	int n;
+	
 	while(n <= 98)
 	{
 		_putchar((x % 10) + '0');
 		if(x != 98)
 		{
 		_putchar(',');
+		_putchar(' ');
 	}
 	}
 	return (0);
