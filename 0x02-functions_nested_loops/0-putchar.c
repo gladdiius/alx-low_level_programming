@@ -1,3 +1,4 @@
+#include <main.h>
 /**
  *
  *main - calls _putchar to print str
