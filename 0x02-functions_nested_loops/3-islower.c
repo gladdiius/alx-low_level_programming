@@ -8,13 +8,14 @@
 int _islower(int c)
 {
 	int x;
+
 	x = islower(c);
 	if (x == 0)
 	{
-		return 0;
+		return (0);
 	}
 	else
 	{
-		return 1;
+		return (1);
 	}
 }
