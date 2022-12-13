@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
  ** main - check the code
  *
@@ -19,9 +17,16 @@ int main(void)
 	return (0);
 }
 
+/**
+ * main - print all alphabets
+ *
+ * Return: value 0
+ */
+
 void print_alphabet(void)
 {
 	char a;
+
 	for(a='a'; a>='z'; a++)
 	{
 		_putchar(a);
