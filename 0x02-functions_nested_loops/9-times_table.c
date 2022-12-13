@@ -16,8 +16,15 @@ void times_table(void)
 	{
 	table = e[j] * e[i];
 	_putchar((table % 10) + '0');
+	if(j != 9)
+	{
 	_putchar(',');
 	_putchar(' ');
 	}
+	else
+	{
+		_putchar('\n');
 	}
+	}
+}
 }
