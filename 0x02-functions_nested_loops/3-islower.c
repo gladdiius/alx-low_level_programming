@@ -13,7 +13,7 @@ int _islower(int c)
 	{
 		return 0;
 	}
-	if (x == 2)
+	else
 	{
 		return 1;
 	}
