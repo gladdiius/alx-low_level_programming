@@ -5,7 +5,7 @@
  *@x: number passed from main
  *Return: value int
  */
-int print_last_digit(int)
+int print_last_digit(int x)
 {
 	return (x % 10));
 }
