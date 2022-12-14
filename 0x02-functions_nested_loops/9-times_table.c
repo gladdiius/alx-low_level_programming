@@ -51,13 +51,13 @@ void times_table(void)
 	else if (i == 3 && table == 6)
 	{
 		 _putchar(',');
-		 _putchar(',');
-		 _putchar(',');
+		 _putchar(' ');
+		 _putchar(' ');
 	}
 	else if (i == 5 && table == 5)
 	{
 		_putchar(',');
-		_putchar(',');
+		_putchar(' ');
 	}
 	else
 	{
