@@ -25,11 +25,11 @@ void times_table(void)
 		_putchar((table % 10) + '0'); 
 	}
 
-	if(i != 9 && table < 10)
+	if(i != 9 && (table % 10 != table))
 	{
 		_putchar(',');
 		_putchar(' ');
-		_putchar(' ');
+		_putchar(' ')i;
 	 
 	}
 	else if (i != 9 && table >= 10)
