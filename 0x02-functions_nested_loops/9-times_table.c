@@ -24,19 +24,19 @@ void times_table(void)
 		_putchar((table / 10) + '0');
 		_putchar((table % 10) + '0'); 
 	}
-	if (i == 2 && table >= 5)
+	if (i == 1 && table >= 5)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 	}
-	else if (i == 4 && table == 6)
+	else if (i == 3 && table == 6)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 	}
-	else if (i == 6 && table == 5)
+	else if (i == 5 && table == 5)
 	{
 		_putchar(',');
 		_putchar(' ');
