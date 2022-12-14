@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *print_last_digit - return table of numbers
  *@x: number passed from main
@@ -7,9 +6,8 @@
  */
 void times_table(void)
 {
-	int table;
 	int e[]={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	int i, j;
+	int i, j, table;
 	for (j = 0; j <= 9; j++)
 	{
 	for (i = 0; i <= 9; i++)
@@ -24,39 +22,10 @@ void times_table(void)
 		_putchar((table / 10) + '0');
 		_putchar((table % 10) + '0'); 
 	}
-
 	if (i != 9 && table < 10 && table * 2 <= 10)
 	{
 		_putchar(',');
 		_putchar(' ');
-		_putchar(' ');
-	 
-	}
-	else if (i != 9 && table < 10 && table * 2 > 10)
-	{
-		_putchar(',');
-		_putchar(' ');
-	}
-	else if (i != 9 && table >= 10)
-	{
-		_putchar(',');
-		_putchar(' ');
-	}
-	else if (i == 1 && table >= 5)                                                                                                 
-	{		
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-	}
-	else if (i == 3 && table == 6)
-	{
-		 _putchar(',');
-		 _putchar(' ');
-		 _putchar(' ');
-	}
-	else if (i == 5 && table == 5)
-	{
-		_putchar(',');
 		_putchar(' ');
 	}
 	else
