@@ -24,15 +24,32 @@ void times_table(void)
 		_putchar((table / 10) + '0');
 		_putchar((table % 10) + '0'); 
 	}
+	if (i == 2 && table >= 5)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+	}
+	else if (i == 4 && table == 6)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+	}
+	else if (i == 6 && table == 5)
+	{
+		_putchar(',');
+		_putchar(' ');
+	}
 
-	if(i != 9 && table < 10 && table * 2 <= 10)
+	else if (i != 9 && table < 10 && table * 2 <= 10)
 	{
 		_putchar(',');
 		_putchar(' ');
 		_putchar(' ');
 	 
 	}
-	else if(i != 9 && table < 10 && table * 2 > 10)
+	else if (i != 9 && table < 10 && table * 2 > 10)
 	{
 		_putchar(',');
 		_putchar(' ');
