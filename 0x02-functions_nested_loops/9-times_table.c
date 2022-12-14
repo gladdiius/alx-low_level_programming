@@ -24,23 +24,6 @@ void times_table(void)
 		_putchar((table / 10) + '0');
 		_putchar((table % 10) + '0'); 
 	}
-	if (i == 1 && table >= 5)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-	}
-	else if (i == 3 && table == 6)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-	}
-	else if (i == 5 && table == 5)
-	{
-		_putchar(',');
-		_putchar(' ');
-	}
 
 	else if (i != 9 && table < 10 && table * 2 <= 10)
 	{
@@ -58,6 +41,23 @@ void times_table(void)
 	{
 		_putchar(',');
 		_putchar(' ');
+	}
+	else if (i == 1 && table >= 5)                                                                                                 
+	{		
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+	}
+	else if (i == 3 && table == 6)
+	{
+		 _putchar(',');
+		 _putchar(',');
+		 _putchar(',');
+	}
+	else if (i == 5 && table == 5)
+	{
+		_putchar(',');
+		_putchar(',');
 	}
 	else
 	{
