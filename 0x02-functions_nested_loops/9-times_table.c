@@ -32,7 +32,7 @@ void times_table(void)
 		_putchar(' ');
 	 
 	}
-	else if(table < 10 && table * 2 > 10)
+	else if(i != 9 && table < 10 && table * 2 > 10)
 	{
 		_putchar(',');
 		_putchar(' ');
