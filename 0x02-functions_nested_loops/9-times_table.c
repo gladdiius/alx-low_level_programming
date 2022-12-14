@@ -29,7 +29,7 @@ void times_table(void)
 		_putchar(' ');
 		_putchar(' ');
 	}
-	else if (i != 9 && (table != 0 || table != 1 && table == j) || (j == 3 && table == 8)
+	else if (i != 9 && (table != 0 || table != 1) && table == j || (j == 3 && table == 8)
 			   || (j == 4 && table == 9) || (j == 5 && table == 8) || table > 10)
 	{
 		_putchar(',');
