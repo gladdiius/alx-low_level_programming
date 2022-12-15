@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * mul - multiply two numbers
- * @a: is an intiger
- * @b: is an intiger
- * Return: return product of two numbers
+ * print_numbers - multiply two numbers
  */
 
 void print_numbers(void)
 {
 	int i = 0;
 
-	while(i < 9)
+	while (i <= 9)
 	{
-	_putchar(i);
-	i++;
+	_putchar((i % 10) + '0');
+	i += 1;
 	}
 }
