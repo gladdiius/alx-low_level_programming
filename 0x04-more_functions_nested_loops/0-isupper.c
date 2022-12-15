@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * int _isupper - check if a number is upppercase or lowercase
  * @arg1:is an intiger
