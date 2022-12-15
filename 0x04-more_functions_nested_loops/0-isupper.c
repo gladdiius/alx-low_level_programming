@@ -1,4 +1,4 @@
-#include "main.h"
+#include <ctype.h>
 
 /**
  * _isupper - check if a number is upppercase or lowercase
