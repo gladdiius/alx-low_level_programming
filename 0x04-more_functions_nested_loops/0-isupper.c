@@ -8,10 +8,8 @@
 
 int _isupper(int c)
 {
-	int x; 
-
-	x = isupper(c)
-	if (x == 0)
+	
+	if (c >='a' && c <= 'z')
 	{
 		return (0);
 	}
