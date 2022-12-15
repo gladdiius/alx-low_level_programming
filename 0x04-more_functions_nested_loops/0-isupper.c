@@ -1,4 +1,4 @@
-#include <ctype.h>
+#include "main.h"
 
 /**
  * _isupper - check if a number is upppercase or lowercase
@@ -11,13 +11,13 @@ int _isupper(int c)
 	int x; 
 
 	x = isupper(c)
-	if (x == 2)
+	if (x == 0)
 	{
-		return (1);
+		return (0);
 	}
 
 	else
 	{
-		return (0);
+		return (1);
 	}
 }
