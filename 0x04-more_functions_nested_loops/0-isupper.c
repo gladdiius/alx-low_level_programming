@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _isupper - check if a number is upppercase or lowercase
- * c:is an intiger
+ * c: is an intiger
  * Return: return 1 if uppercase else 0
  */
 
