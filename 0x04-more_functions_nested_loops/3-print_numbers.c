@@ -1,5 +1,3 @@
-#include "main.h"
-
 /**
  * print_numbers - print 1 to 9
  * Return: void
@@ -7,13 +5,13 @@
 
 void print_numbers(void)
 {
-	char i;
+	int i = 0;
 
-	for (i = '0'; i <= '9'; i++)
+	while (i <= 9)
 	{
-		_putchar(i);
-
-	} 
+		_putchar(i % 10 + '0');
+		i += 1;
+	}
 
 	_putchar('\n');
 }
