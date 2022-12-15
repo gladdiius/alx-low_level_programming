@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _isupper - check if a number is upppercase or lowercase
  * @c: is an intiger
@@ -6,7 +8,10 @@
 
 int _isupper(int c)
 {
-	if (c > 'a' && x < 'z')
+	int x; 
+
+	x = isupper(c)
+	if (x == 2)
 	{
 		return (1);
 	}
