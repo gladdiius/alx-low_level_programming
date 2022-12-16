@@ -7,7 +7,7 @@
 void print_numbers(void)
 {
 	int array[] ={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-
+	int i = 0;
 	while (i <= 9)
 	{
 		_putchar(array[i] % 10 + '0');
