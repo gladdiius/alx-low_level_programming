@@ -11,7 +11,7 @@ void print_numbers(void)
 	int i = 0;
 	while (i <= 9)
 	{
-		if (i != 2 || i != 5)
+		if (i != 2  && i != 4)
 		{
 		_putchar(array[i] % 10 + '0');
 		}
