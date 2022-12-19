@@ -3,4 +3,4 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 #include <string.h>
 void _puts(char *str);
-stdio.h
+#include <stdio.h>
