@@ -10,10 +10,12 @@ void rev_string(char *s)
 	double x = strlen(s); 
 	double middle = x / 2;
 	middle = ceil(middle);
-	int last ;
-	last = x - 1;	
-	int first = 0;
-	int y = 0;
+	int last;
+	int first;
+	int y;
+	last = xi - 1;
+	y = 0;
+	first = 0;
 
 	if (((double)middle/2 )!= 0)
 	{
