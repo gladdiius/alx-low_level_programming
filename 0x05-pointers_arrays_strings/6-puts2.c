@@ -12,7 +12,8 @@ void puts2(char *str)
 	len = strlen(str);
 	while (x < len)
 	{
-		printf("%c\n",str[x]);
+		printf("%c",str[x]);
 		x += 2;
 	}
+	putchar('\n');
 }
