@@ -8,11 +8,11 @@ void puts2(char *str)
 {
 	int x = 0;
 	int len;
-	
+
 	len = strlen(str);
 	while (x < len)
 	{
-		printf("%c",str[x]);
+		printf("%c", str[x]);
 		x += 2;
 	}
 	putchar('\n');
