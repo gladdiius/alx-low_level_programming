@@ -4,19 +4,37 @@
  *@s: argument 1
  *Return: void
  */
-
 void rev_string(char *s)
 {
-	int x;
+	char *p, *j, b;
+	double x = strlen(s), middle = ceil(x / 2);
+	int last = x -1 , first = 0, y = 0;
 
-	x = strlen(s);
-	while (x >= 0)
+	if (((double)middle/2 )!= 0)
 	{
-		if (s[x] != '\0')
+		while(y < middle)
 		{
-			printf("%c", s[x]);
+			if (last >= (int)middle && first < (int)middle)
+			{
+				j = &s[first];b = s[first];
+				p = &s[last];
+				*j = s[last];
+				*p = b;last--;
+				first++;
+			}
+			y++;
 		}
-		x -= 1;
 	}
-	putchar('\n');
+	else
+	{
+		while(y <= middle)
+		{
+			j = &s[first];
+			b = s[first];
+			p = &s[last];
+			*j = s[last];
+			*p = b;last--;
+			first++;y++;
+		}
+	}
 }
