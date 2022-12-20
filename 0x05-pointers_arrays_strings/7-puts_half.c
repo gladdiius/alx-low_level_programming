@@ -6,10 +6,13 @@
  */
 void puts_half(char *str)
 {
-	float x = 2;
 	int len, len2;
+	float l, middle;
+	l = 2;
 	len2 = strlen(str);
-	if (len2 % x == 0)
+	middle = len2/l;
+
+	if (middle == 0)
 	{
 		len = (strlen(str) / 2);
 	}
@@ -18,7 +21,6 @@ void puts_half(char *str)
 		len = (strlen(str) / 2) + 1;
 	}
 	len2 = strlen(str) - 1;
-	
 	while (len <= len2)
 	{
 		printf("%c", str[len]);
