@@ -6,14 +6,13 @@
  */
 void puts_half(char *str)
 {
-	int x = 0;
 	int len, len2;
 
 	len = strlen(str)/2;
-	len2 = strlen(str);
+	len2 = strlen(str) - 1;
 	while (len2 >= len)
 	{
-		printf("%c", str[x]);
+		printf("%c", str[len2]);
 		len2--;
 	}
 	putchar('\n');
