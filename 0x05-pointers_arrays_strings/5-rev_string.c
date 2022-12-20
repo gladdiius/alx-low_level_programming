@@ -15,7 +15,7 @@ void rev_string(char *s)
 	last = x - 1;
 	y = 0;
 	first = 0;
-	middle = ceil(middle);
+	middle = round(middle);
 
 	if (((double)middle/2 )!= 0)
 	{
