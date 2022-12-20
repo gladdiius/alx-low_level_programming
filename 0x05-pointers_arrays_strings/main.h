@@ -7,3 +7,4 @@ void _puts(char *str);
 void print_rev(char *s);
 void rev_string(char *s);
 #include <math.h>
+void puts2(char *str);
