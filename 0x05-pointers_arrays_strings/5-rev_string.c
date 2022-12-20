@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int last;
 	int first;
 	int y;
-	last = i - 1;
+	last = x - 1;
 	y = 0;
 	first = 0;
 	middle = ceil(middle);
