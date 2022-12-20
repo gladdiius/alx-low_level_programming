@@ -8,12 +8,12 @@ void puts_half(char *str)
 {
 	int len, len2;
 
-	len = strlen(str)/2;
+	len = (strlen(str) / 2) + 1;
 	len2 = strlen(str) - 1;
-	while (len2 >= len)
+	while (len <= len2)
 	{
-		printf("%c", str[len2]);
-		len2--;
+		printf("%c", str[len]);
+		len++;
 	}
 	putchar('\n');
 }
