@@ -7,26 +7,26 @@
 void rev_string(char *s)
 {
 	char *p, *j, b;
-	double x = strlen(s); 
+	double x = strlen(s);
 	double middle = x / 2;
-	int last;
-	int first;
-	int y;
+	int last, first, y;
+
 	last = x - 1;
 	y = 0;
 	first = 0;
-	middle = middle + 0.5 ;
-
-	if (((double)middle/2 )!= 0)
+	middle = middle + 0.5;
+	if (((double)middle / 2) != 0)
 	{
-		while(y < middle)
+		while (y < middle)
 		{
 			if (last >= (int)middle && first < (int)middle)
 			{
-				j = &s[first];b = s[first];
+				j = &s[first];
+				b = s[first];
 				p = &s[last];
 				*j = s[last];
-				*p = b;last--;
+				*p = b;
+				last--;
 				first++;
 			}
 			y++;
@@ -34,14 +34,16 @@ void rev_string(char *s)
 	}
 	else
 	{
-		while(y <= middle)
+		while (y <= middle)
 		{
 			j = &s[first];
 			b = s[first];
 			p = &s[last];
 			*j = s[last];
-			*p = b;last--;
-			first++;y++;
+			*p = b;
+			last--;
+			first++;
+			y++;
 		}
 	}
 }
