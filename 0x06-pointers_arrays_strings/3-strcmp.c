@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcmp - comapres two stings 
+ * _strcmp - comapres two stings
  * @s1: string
  * @s2: string
  * Return: int
