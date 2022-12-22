@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * *_strcat - concatinat two strings
  * @dest: string 
