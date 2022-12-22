@@ -24,7 +24,7 @@ void reverse_array(int *a, int n)
 				b = a[first];
 				p = &a[last];
 				*j = a[last];
-				*p = a;
+				*p = b;
 				last--;
 				first++;
 			}
@@ -39,7 +39,7 @@ void reverse_array(int *a, int n)
 			b = a[first];
 			p = &a[last];
 			*j = a[last];
-			*p = a;
+			*p = b;
 			last--;
 			first++;
 			y++;
