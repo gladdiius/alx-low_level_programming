@@ -20,11 +20,11 @@ void reverse_array(int *a, int n)
 		{
 			if (last >= (int)middle && first < (int)middle)
 			{
-				j = &s[first];
-				b = s[first];
-				p = &s[last];
-				*j = s[last];
-				*p = b;
+				j = &a[first];
+				b = a[first];
+				p = &a[last];
+				*j = a[last];
+				*p = a;
 				last--;
 				first++;
 			}
@@ -35,11 +35,11 @@ void reverse_array(int *a, int n)
 	{
 		while (y <= middle)
 		{
-			j = &s[first];
-			b = s[first];
-			p = &s[last];
-			*j = s[last];
-			*p = b;
+			j = &a[first];
+			b = a[first];
+			p = &a[last];
+			*j = a[last];
+			*p = a;
 			last--;
 			first++;
 			y++;
