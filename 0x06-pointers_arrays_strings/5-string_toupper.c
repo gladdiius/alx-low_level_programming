@@ -10,11 +10,18 @@ char *string_toupper(char *x)
 {
 	int i, size = sizeof(x) / sizeof(x[0]);
 	char *j;
-	while( i < size && x[i] != '\0')
+
+	while (i < size && x[i] != '\0')
 	{
-		j = &x[i];
-		*j = toupper(x[i]);
+		for (f = 'A' ; f <= 'Z' ; f++)
+		{
+			if ((x[i] - f) == 32)
+			{
+				j = &x[i];
+				*j = f;
+			}
+		}
 		i++;
 	}
-	return x;
+	return (x);
 }
