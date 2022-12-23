@@ -8,19 +8,11 @@
  */
 char *string_toupper(char *x)
 {
-	int i, size = sizeof(x) / sizeof(x[0]);
-	char *j, f;
-
-	while (i < size && x[i] != '\0')
+	int i = 0;
+	while(x[i])
 	{
-		for (f = 'A' ; f <= 'Z' ; f++)
-		{
-			if ((x[i] - f) == 32)
-			{
-				j = &x[i];
-				*j = f;
-			}
-		}
+		if (x[i] >= 97 && x[i] <= 122)
+			x[i] = x - 32;
 		i++;
 	}
 	return (x);
