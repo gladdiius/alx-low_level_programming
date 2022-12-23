@@ -9,7 +9,7 @@
 char *string_toupper(char *x)
 {
 	int i, size = sizeof(x) / sizeof(x[0]);
-	char *j;
+	char *j, f;
 
 	while (i < size && x[i] != '\0')
 	{
