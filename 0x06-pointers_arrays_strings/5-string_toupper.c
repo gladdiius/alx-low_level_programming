@@ -8,5 +8,13 @@
  */
 char *string_toupper(char *x)
 {
-	return (toupper(*x));
+	int i, size = sizeof(x) / sizeof(x[0]);
+	char *j;
+	while( i < size && x[i] != '\0')
+	{
+		j = &x[i];
+		*j = toupper(x[i]);
+		i++;
+	}
+	return x;
 }
