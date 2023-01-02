@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * *_memset - fills memory with constant byte
- * @s: pointer to the block of memory to fill
- * @b: the value to be set
+ * *_memcpy - fills memory with constant byte
+ * @dest: pointer to the block of memory to fill
+ * @src: the value to be set
  * @n: number of bytes to be set to the value
- * Return: the new char in memory
+ * Return: copy of string
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
