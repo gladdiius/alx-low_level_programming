@@ -1,3 +1,4 @@
+#include <main.h>
 /**
  * *memset - fills memory with constant byte
  * @*s - pointer to the block of memory to fill
