@@ -4,18 +4,19 @@
  * @a: 2d array
  * Return: void
  */
-void print_chessboard(char (*a)[8])
+void print_chessboard(char (*a)[8]);
 {
-	int i, k;
+	int i;
 	char j;
-	for(k = 0; k < 8; k++)
+	for(i = 0; i < 8; i++)
 	{
-		for(i = 0; i < 8; i++)
-		{
-			j = a[k][i];
-			putchar(j);
-		}
-		_putchar('\n');
+		j = a[0][i];
+		_putchar(j);	
 	}
-
+	_putchar('\n');
+	for(i = 0; i < 8; i++)
+	{
+		j = a[7][i];
+		_putchar(j);
+	}
 }
