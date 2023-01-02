@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strspn - filters out a specied sub string from string
+ * _strpbrk - filters out a specied sub string from string
  * @s: string
  * @accept: string
  * Return: string
