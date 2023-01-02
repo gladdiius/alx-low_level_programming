@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strchr - check if a string is in set of specified segment
+ * _strspn - check if a string is in set of specified segment
  * @s: string
  * @accept: string
  * Return: int
