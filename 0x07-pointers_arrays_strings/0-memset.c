@@ -1,7 +1,7 @@
 #include <main.h>
 /**
- * *memset - fills memory with constant byte
- * @*s: pointer to the block of memory to fill
+ * *_memset - fills memory with constant byte
+ * @s: pointer to the block of memory to fill
  * @b: the value to be set
  * @n: number of bytes to be set to the value
  * Return: the new char in memory
