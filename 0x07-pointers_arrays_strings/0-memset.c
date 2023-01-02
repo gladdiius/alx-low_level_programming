@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * *_memset - fills memory with constant byte
  * @s: pointer to the block of memory to fill
@@ -7,11 +8,5 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	unsigned char *memo = s;
-	for (i = 0; i < n; i++)
-	{
-		memo[i] = b;
-	}
-	return memo;
+	return (memset(s, b, n));
 }
