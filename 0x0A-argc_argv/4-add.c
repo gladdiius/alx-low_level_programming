@@ -9,9 +9,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, y, z, sum;
+	int w, x, y, z, sum;
 
-	if (argc == 1)
+	w = atoi(argc);
+
+	if (w == 1)
 	{
 		printf("%d\n", 0);
 		return (0);
