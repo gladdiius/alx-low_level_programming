@@ -13,8 +13,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	int x = atoi(argv[1]) * atoi(argv[2]);
+	int x;
+	int y;
+ 	
+	y = atoi(argv[1])
+	x = atoi(argv[2]);
 
-	printf("%d\n", x);
+	printf("%d\n", x * y);
 	return (0);
 }
