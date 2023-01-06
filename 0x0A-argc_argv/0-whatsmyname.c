@@ -7,6 +7,5 @@
  */
 int main (int argc, char *argv[])
 {
-	char elias[] = argv[0];
-	printf("%s" , elias);
+	printf("%s\n" , argv[0]);
 }
