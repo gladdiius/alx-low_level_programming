@@ -9,11 +9,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int w, x, y, z, sum;
+	int x, y, z, sum;
 
-	w = atoi(argc);
-
-	if (w == 1)
+	if (argc == 1)
 	{
 		printf("%d\n", 0);
 		return (0);
@@ -22,14 +20,14 @@ int main(int argc, char *argv[])
 	{
 		z = atoi(argv[x]);
 		y = isdigit(z);
-		if (y == 0)
+		if (y != 0)
 		{
-			printf("Error\n");
-			return (1);
+			sum += z;
 		}
 		else
 		{
-			sum += z;
+			printf("Error\n");
+			return 1;
 		}
 
 	}
