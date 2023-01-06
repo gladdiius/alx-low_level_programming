@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * main - print name of args
+ * main - multiply two args
  *@argc:int
  *@argv:char
- *Return: value 0
+ *Return: value 0 or 1 if argc < 3
  */
 int main(int argc, char *argv[])
 {
-	if (args < 3)
+	if (argc < 3)
 	{
 		puts("error");
 		return (1);
