@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 		printf("Error");
 		return (1);
 	}
-	int x = argv[1] * argv[2];
+	int x = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d", x);
 	return (0);
