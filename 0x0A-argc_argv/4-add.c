@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, y, z, sumi;
+	int x, y, z, sum;
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
