@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	if (argc < 3)
 	{
-		puts("error");
+		printf("Error");
 		return (1);
 	}
 	int x = argv[1] * argv[2];
