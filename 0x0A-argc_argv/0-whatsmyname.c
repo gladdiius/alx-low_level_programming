@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- *main- print is name
+ * main - print is name
  *@argc:int
  *@argv:char
- *
+ *Return: value 0
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
 	printf("%s\n", argv[0]);
