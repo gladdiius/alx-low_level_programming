@@ -10,10 +10,11 @@
 int main(int argc, char *argv[])
 {
 	int x, y, z, sum;
+
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
-		return 0;
+		return (0);
 	}
 	for (x = 0; x < argc; x++)
 	{
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 		if (y == 0)
 		{
 			printf("Error\n");
-			return 1;
+			return (1);
 		}
 		else
 		{
@@ -31,5 +32,5 @@ int main(int argc, char *argv[])
 
 	}
 	printf("%d\n", sum);
-	return 0;
+	return (0);
 }
