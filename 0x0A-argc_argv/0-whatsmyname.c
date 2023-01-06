@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- *main - print is name
- *@argc-int
+ *main- print is name
+ *@argc:int
  *@argv:char
  *
  */
