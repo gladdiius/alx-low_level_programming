@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int x, y, z;
+	int x, y, z, sumi;
 	if (argc == 1)
 	{
 		printf("%d\n", 0);
@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	}
 	for (x = 0; x < argc; x++)
 	{
-		z = atoi(argv[i]);
+		z = atoi(argv[x]);
 		y = isdigit(z);
 		if (y == 0)
 		{
@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 		}
 
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 	return 0;
-}
+}i
