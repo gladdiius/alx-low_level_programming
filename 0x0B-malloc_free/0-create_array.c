@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *
  *create_array -creats an arrray
@@ -26,4 +27,4 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 	return ar;
-}
+}i
