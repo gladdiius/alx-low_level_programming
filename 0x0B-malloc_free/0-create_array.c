@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  *create_array -creats an arrray
  *@size: unsigned int
