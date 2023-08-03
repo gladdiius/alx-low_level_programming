@@ -5,7 +5,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	int i = 15, mask, set = 0;
+	int i = 70, mask, set = 0;
 
 	while (i >= 0)
 	{
