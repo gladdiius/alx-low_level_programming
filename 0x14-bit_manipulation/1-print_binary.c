@@ -6,7 +6,7 @@
 void print_binary(unsigned long int n)
 {
 	int i = 11, set = 0;
-	unsigned int mask;
+	unsigned long int mask;
 
 	while (i >= 0)
 	{
