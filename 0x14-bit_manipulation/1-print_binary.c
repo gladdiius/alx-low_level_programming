@@ -10,8 +10,8 @@ void print_binary(unsigned long int n)
 
 	while (i >= 0)
 	{
-		mask = 1 << i;
-		if (n & mask)
+		mask = n >> i;
+		if (mask & 1)
 		{
 			_putchar('1');
 			set = 1;
