@@ -8,8 +8,5 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if ((int)index < 0)
-		return (-1);
-	else
-		return ((n & (n << index)) ? 1 : 0);
+	return ((n & (n << index)) ? 1 : 0);
 }
