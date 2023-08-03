@@ -1,15 +1,25 @@
 #include "main.h"
+
 /**
- * get_bit- returns the value of a bit at a given index.
- * @n: integer value
- * @index: the value of bit at position to be returned
- * Return: the value of the bit at index index or -1
- *if an error occured
+ * print_binary - prints the binary equivalent of a decimal number
+ * @n: number to print in binary
  */
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	if ((int)n < 0 || (int)index < 0)
-		return (0);
-	else
-		return ((n & (1 << index)) ? 1 : 0);
+	int i, count = 0;
+	unsigned long int current;
+
+	for (i = 63; i >= 0; i--)
+	{
+		current = n >> i;
+		if (current & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+			putchar('0');
+	}
+	if (!count)
+		_putchar('0');
 }
