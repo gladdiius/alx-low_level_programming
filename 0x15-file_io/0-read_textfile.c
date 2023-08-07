@@ -8,14 +8,18 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-#define BUFFER 1000
-	char buf[BUFFER];
-	ssize_t n;
+	ssize_t c;
 	int fd;
+	char *ptr;
 
 	fd = open(filename, O_RDONLY);
-	n = read(fd, &buf, letters);
-	write(STDOUT_FILENO, buf, n);
+
+	ptr = malloc(sizeof(char) * letters);
+
+	read(fd, ptr, letters);
+	c = write(STDOUT_FILENO, ptr, letters);
+
 	close(fd);
-	return (n);
+	free(ptr);
+	return (c);
 }
