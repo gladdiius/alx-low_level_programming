@@ -1,41 +1,29 @@
 #include "lists.h"
-/**
- * create - a new node
- * @head: the pointer to struct
- * @n: the value of node
- * Return: the new node
- */
-dlistint_t *create(dlistint_t *head, const int n)
-{
-	head = malloc(sizeof(dlistint_t));
-	head->prev = NULL;
-	head->n = n;
-	head->next = NULL;
-	return (head);
-}
 
 /**
- * add_dnodeint - add a node at the beginning of a list
- * @head: Pointer to the first node on list
- * @n: the value to be insert at the beginning
- * Return: the new pointer to the first node
+ * add_dnodeint - adds a new node at the beginning
+ * of a dlistint_t list
  *
+ * @head: head of the list
+ * @n: value of the element
+ * Return: the address of the new element
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *ptr;
+	dlistint_t *new;
+	dlistint_t *h;
 
-	if (!(*head))
-	{
-		*head = create(*head, n);
-		return (*head);
-	}
-	ptr = create(*head, n);
-	if (!ptr)
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
 		return (NULL);
-	ptr->prev = NULL;
-	ptr->n = n;
-	ptr->next = *head;
-	*head = ptr;
-	return (*head);
+
+	new->n = n;
+	new->prev = NULL;
+	h = *head;
+
+
+	new->next = h;
+	*head = new;
+
+	return (new);
 }
