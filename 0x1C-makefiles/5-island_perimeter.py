@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """function for isalnd"""
 
-
 def island_perimeter(grid):
     """
     Calculates the perimeter of the island described in the grid.
