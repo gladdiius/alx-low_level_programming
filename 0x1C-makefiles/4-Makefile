@@ -1,14 +1,16 @@
-NAME = <link>school</link>
+NAME = school
 
-CC = <link>gcc</link>
+# Compiler
+CC = gcc
 
-SRC = <link>main.c</link> <link>school.c</link>
+# Source files
+SRC = main.c school.c
 
 OBJ = $(SRC:.c=.o)
 
-RM = <link>rm -f</link>
+RM = rm -f
 
-CFLAGS = <link>-Wall -Werror -Wextra -pedantic</link>
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
