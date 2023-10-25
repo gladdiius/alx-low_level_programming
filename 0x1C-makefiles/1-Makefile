@@ -1,9 +1,7 @@
-#Name of the executable
 CC=gcc
-
-# List of source files
+EXECUTABLE = school
 SRC = main.c school.c
 
-# Rule for building the executable
+
 all:
-	gcc $(SRC) -o school
+	gcc $(SRC) -o $(EXECUTABLE)
