@@ -4,7 +4,7 @@ CC = gcc
 
 SRC = main.c school.c
 
-OBJ = $(patsubst %.c, %.o, $(SRC))
+OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
@@ -13,12 +13,18 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
 
-$(OBJ): $(SRC) m.h
+.c.o:
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) *~ *.swp $(NAME) $(OBJ)
+	-$(RM) *~ *.swp $(NAME) $(OBJ)
 
-re: clean all
+fclean: clean
+	-$(RM) $(NAME)
 
-.PHONY: all clean re
+oclean:
+	-$(RM) $(OBJ)
+
+re: fclean all
+
+.PHONY: all clean fclean oclean re
