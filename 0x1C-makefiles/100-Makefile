@@ -1,26 +1,29 @@
-CC = gcc
-SRC = main.c file1.c file2.c
-OBJ = $(SRC:.c=.o)
-NAME = school
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
+NAME = <link>school</link>
 
-.PHONY: all clean oclean fclean re
+CC = <link>gcc</link>
+
+SRC = <link>main.c</link> <link>school.c</link>
+
+OBJ = $(SRC:.c=.o)
+
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) -o $@ $^
+
+$(OBJ): %.o: %.c m.h
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ) $(NAME) *~ \#*\# *.swp
+	$(RM) *~ *.swp $(NAME)
 
 oclean:
 	$(RM) $(OBJ)
 
-fclean: clean
+fclean: clean oclean
 
 re: fclean all
 
-$(OBJ): %.o: %.c m.h
-	$(CC) $(CFLAGS) -c $< -o $@
+.PHONY: all clean oclean fclean re
