@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""function for isalnd"""
+
 
 def island_perimeter(grid):
     """
