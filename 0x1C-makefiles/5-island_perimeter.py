@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""this is the funtion that define island"""
 
 def island_perimeter(grid):
     """
@@ -12,17 +11,16 @@ def island_perimeter(grid):
         int: The perimeter of the island.
 
     Raises:
-        ValueError: If the grid is not rectangular or
-                        exceeds the maximum width and height.
+        ValueError: If the grid is not rectangular
+                        or exceeds the maximum width and height.
+
     """
 
-
-    if not all(len(row) == len(grid[0]) for row in grid) \
+    if not all(len(row) == len(grid[0]) for row in grid)\
             or len(grid) > 100 or len(grid[0]) > 100:
         raise ValueError("Invalid grid dimensions")
 
     perimeter = 0
-
 
     for i in range(len(grid)):
         for j in range(len(grid[0])):
