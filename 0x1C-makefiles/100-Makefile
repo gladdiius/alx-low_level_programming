@@ -8,6 +8,8 @@ OBJ = $(SRC:.c=.o)
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+RM = $(shell $(CC) -print-prog-name=rm)
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
@@ -22,9 +24,6 @@ clean:
 fclean: clean
 	-$(RM) $(NAME)
 
-oclean:
-	-$(RM) $(OBJ)
-
 re: fclean all
 
-.PHONY: all clean fclean oclean re
+.PHONY: all clean fclean re
