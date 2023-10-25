@@ -1,10 +1,10 @@
-NAME = <link>school</link>
+NAME = school
 
-CC = <link>gcc</link>
+CC = gcc
 
-SRC = <link>main.c</link> <link>school.c</link>
+SRC = main.c school.c
 
-OBJ = $(SRC:.c=.o)
+OBJ = $(patsubst %.c, %.o, $(SRC))
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
@@ -13,17 +13,12 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^
 
-$(OBJ): %.o: %.c m.h
+$(OBJ): $(SRC) m.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) *~ *.swp $(NAME)
+	$(RM) *~ *.swp $(NAME) $(OBJ)
 
-oclean:
-	$(RM) $(OBJ)
+re: clean all
 
-fclean: clean oclean
-
-re: fclean all
-
-.PHONY: all clean oclean fclean re
+.PHONY: all clean re
