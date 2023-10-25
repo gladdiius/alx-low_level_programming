@@ -1,0 +1,9 @@
+#Name of the executable
+EXECUTABLE = school
+
+# List of source files
+SOURCES = main.c school.c
+
+# Rule for building the executable
+all:
+	gcc $(SOURCES) -o $(EXECUTABLE)
